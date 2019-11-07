@@ -26,6 +26,7 @@ li a {
 h1 {
 	color:#FF71BC;
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	text-align: center;
 }
 h2 {
 	font-style: italic;
