@@ -1,0 +1,114 @@
+@import url("https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat");
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #d0e7ee;
+    text-align: center;
+  }
+  body {
+    background-color: black;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #393D5B;
+    min-height: 60vh;
+    width: 600px;
+    border: 2px solid white;
+  }
+  .container div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    width: 400px;
+    height: 400px;
+  }
+  .container div:hover {
+    background-color: cadetblue;
+  }
+  .container .first {
+    background-color: azure;
+  }
+  .container .second {
+    background-color: aquamarine;
+  }
+  .container .third {
+    background-color: azure;
+  }
+  .container .fourth {
+    background-color: aquamarine;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    background-color: #393D5B;
+    min-height: 60vh;
+    border: 2px solid white;
+  }
+  .container div {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    width: 650px;
+    height: 1000px;
+  }
+  .container .first {
+    background-color: azure;
+  }
+  .container .first:hover {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .container .second {
+    background-color: aquamarine;
+  }
+  .container .second:hover {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .container .third {
+    background-color: azure;
+  }
+  .container .third:hover {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .container .fourth {
+    background-color: aquamarine;
+  }
+  .container .fourth:hover {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+  }
+}
+/*# sourceMappingURL=nelson_wdps.css.map */

@@ -1,0 +1,51 @@
+@import 'partials/variables';
+
+
+  h1{
+    font-family: $primary-font;
+    color: $primary_font_color;
+    text-align: center;
+  }
+  body{
+    background: black;
+  }
+
+    .container {
+    justify-content: center;
+    width:60eh;
+    margin: 2em;
+    background-color: #393D5B;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 10px;
+    grid-template-areas: "header header"
+                            "content content"
+    }
+        div {
+          margin: 10px;
+          padding:10px;
+          color:white;
+          border: 1px solid white;
+          text-align: center;
+        }
+        .first {
+            grid-area: header;
+        }
+        .second{
+        }
+        .third{
+        }
+        .fourth{
+        }
+        .fifth {
+        }
+        .sixth{
+        }
+        .seventh{
+        }
+        @media(max-width:768px){
+
+
+    }
