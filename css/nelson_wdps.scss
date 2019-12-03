@@ -1,5 +1,19 @@
 @import 'partials/variables';
 
+@keyframes colorchange {
+  0%{
+    size:20px;
+  }
+  
+  50%{
+    size:30px;
+  }
+  
+  100%{
+    size:20px;
+  }
+}
+
 @media(max-width:768px)  {
 
 
@@ -56,6 +70,12 @@
   body{
     background-color: black;
   }
+    h1{
+    font-family: $primary-font;
+    color: $primary_font_color;
+    animation: colorchange infinite;
+    text-align: center;
+  }
       .container {
           display: flex;
           flex-direction: row;
@@ -73,23 +93,50 @@
           }
           .first {
               background-color: azure;
-              &:hover {flex-grow: 0;}
+              transition-property: width background-color;
+              transition-duration: 0.5s;
+              transition-timing-function: linear;
           }
+
+          .first:hover{
+              width: 850px;
+              background-color: cadetblue;}
+
           .second {
               background-color: aquamarine;
-              &:hover {flex-grow: 1;}
-      
+              transition-property: width background-color;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-in;
           }
+
+          .second:hover{
+              width: 850px;
+              background-color: cadetblue;
+          }
+
           .third {
               background-color: azure;
-              &:hover {flex-grow: 2;}
-      
-        
+              transition-property: width background-color;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-in;
           }
+
+          .third:hover{
+            width: 850px;
+            background-color: cadetblue;}
+
           .fourth {
               background-color: aquamarine;
-              &:hover {flex-grow: 3;}
-      
+              transition-property: width background-color;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-in;
           }
+
+          .fourth:hover{
+            width: 850px;
+            background-color: cadetblue;}
+
         } 
+
+        
       }
