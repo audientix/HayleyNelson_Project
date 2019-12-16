@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#070b2c), to(#4d5386));
+  background: linear-gradient(#070b2c, #4d5386);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  color: #f0f0ff;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #f0f0ff;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f0ff), to(#7979b1));
+  background: linear-gradient(#f0f0ff, #7979b1);
+  min-height: 700px;
+}
+
+.navbar {
+  background-color: #7979b1;
+  opacity: .75;
+  margin: 10px;
+}
+
+.sub {
+  padding: 20px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+/*# sourceMappingURL=aboutstyles.css.map */

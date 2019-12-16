@@ -1,19 +1,5 @@
 @import 'partials/variables';
 
-@keyframes colorchange {
-  0%{
-    size:20px;
-  }
-  
-  50%{
-    size:30px;
-  }
-  
-  100%{
-    size:20px;
-  }
-}
-
 @media(max-width:768px)  {
 
 
@@ -22,8 +8,19 @@
     color: $primary_font_color;
     text-align: center;
   }
+  h2{
+    font-family: $primary-font;
+    color: $primary_font_color;
+    text-align: center;
+    opacity: .75;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
   body{
-    background-color: black;
+    background:linear-gradient(#070b2c,#4d5386 );
   }
 
     .container {
@@ -46,21 +43,37 @@
           
         }
         .first {
-            background-color: azure;
-        }
-        .second {
-            background-color: aquamarine;
-    
-        }
-        .third {
-            background-color: azure;
-    
-      
-        }
-        .fourth {
-            background-color: aquamarine;
-    
-        }
+          background-image: url(assets/chihiro.jpg);
+          background-size: cover;
+          transition-property: width opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: linear;
+      }
+
+      .second {
+          background-image:url(assets/froppy.jpg);
+          background-size: cover;
+          transition-property: width opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: linear;
+      }
+
+      .third {
+         background-image:url(assets/lazuli.jpg);
+         background-size: cover;
+          transition-property: width opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: linear;
+      }
+
+      .fourth {
+        background-image:url(assets/shera.jpg);
+        background-size: cover;
+          transition-property: width opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: linear;
+      }
+
       } 
     }
 
@@ -68,12 +81,26 @@
 
       
   body{
-    background-color: black;
+    background:linear-gradient(#070b2c,#4d5386 );
   }
     h1{
     font-family: $primary-font;
+    font-size: 60px;
+    text-align: center;
+  }
+  h2{
+    font-family: $primary-font;
     color: $primary_font_color;
-    animation: colorchange infinite;
+    text-align: center;
+    opacity: .5;
+    margin-bottom:20px;
+  }
+  .title {
+    color: $primary_font_color;
+  }
+  a{
+    text-decoration: none;
+    color: black;
     text-align: center;
   }
       .container {
@@ -89,52 +116,69 @@
             margin: 10px 5px;
             width: 650px;
             height: 1000px;
+            text-align:center;
+            justify-content: center;;
             
           }
           .first {
-              background-color: azure;
-              transition-property: width background-color;
+              background-image: url(assets/chihiro.jpg);
+              background-size: cover;
+              background-position: -300px;
+              opacity:.5;
+              transition-property: width opacity;
               transition-duration: 0.5s;
               transition-timing-function: linear;
           }
 
           .first:hover{
               width: 850px;
-              background-color: cadetblue;}
+              opacity:1;
+            }
 
           .second {
-              background-color: aquamarine;
-              transition-property: width background-color;
+              background-image:url(assets/froppy.jpg);
+              background-size: cover;
+              background-position: 600px;
+              opacity:.5;
+              transition-property: width opacity;
               transition-duration: 0.5s;
-              transition-timing-function: ease-in;
+              transition-timing-function: linear;
+              opacity:.5;
           }
 
           .second:hover{
               width: 850px;
-              background-color: cadetblue;
+              opacity:1;
           }
 
           .third {
-              background-color: azure;
-              transition-property: width background-color;
+             background-image:url(assets/lazuli.jpg);
+             background-size: cover;
+             background-position: 600px;
+             opacity:.5;
+              transition-property: width opacity;
               transition-duration: 0.5s;
-              transition-timing-function: ease-in;
+              transition-timing-function: linear;
           }
 
           .third:hover{
             width: 850px;
-            background-color: cadetblue;}
+            opacity:1;
+          }
 
           .fourth {
-              background-color: aquamarine;
-              transition-property: width background-color;
+            background-image:url(assets/shera.jpg);
+            background-size: cover;
+            opacity: .5;
+              transition-property: width opacity;
               transition-duration: 0.5s;
-              transition-timing-function: ease-in;
+              transition-timing-function: linear;
           }
 
           .fourth:hover{
             width: 850px;
-            background-color: cadetblue;}
+            opacity:1;
+          }
 
         } 
 
